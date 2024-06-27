@@ -10,7 +10,9 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import TourPackage from 'src/models/TourPackage'; // Uvezi TourPackage klasu
 import UserProfile from '@/models/UserProfileCard';
-
+import TourPackageCard from '../TourPackageCard';
+import UserProfileCard from '../UserProfileCard';
+import 'src/styles/index.css';
 const Hero = () => {
   const [destination, setDestination] = useState('Arab Egypt');
   const [checkIn, setCheckIn] = useState([null, null]);
@@ -43,6 +45,7 @@ const Hero = () => {
 
   return (
     <>
+    
       <section
         id="home"
         className="relative z-10 overflow-hidden bg-cover bg-center pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
@@ -96,20 +99,12 @@ const Hero = () => {
                   </form>
                 </Section>
                 {/* Prikaz TourPackage i UserProfile informacija */}
-                <div className="tour-package-info">
-                  <h2>Tour Package:</h2>
-                  <p>{europeTour.getSummary()}</p>
-                  <p>{europeTour.getDetails()}</p>
-                </div>
-                <div className="user-profile-info">
-                  <h2>User Profile:</h2>
-                  <p>{user.getProfileSummary()}</p>
-                  <pre>{user.getBookingHistory()}</pre>
-                </div>
+              
               </div>
             </div>
           </div>
         </div>
+        
         <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="450"
