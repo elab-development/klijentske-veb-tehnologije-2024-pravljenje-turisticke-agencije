@@ -1,11 +1,7 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import TourPackage from 'src/models/TourPackage'; // Uvezi TourPackage klasu
-import UserProfile from '@/models/UserProfileCard';
-import TourPackageCard from "@/components/TourPackageCard";
-import UserProfileCard from "@/components/UserProfileCard";
-import 'src/styles/index.css';
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

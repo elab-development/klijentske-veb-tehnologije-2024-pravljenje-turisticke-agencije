@@ -8,11 +8,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
-import TourPackage from 'src/models/TourPackage'; // Uvezi TourPackage klasu
-import UserProfile from '@/models/UserProfileCard';
-import TourPackageCard from '../TourPackageCard';
-import UserProfileCard from '../UserProfileCard';
-import 'src/styles/index.css';
+
 const Hero = () => {
   const [destination, setDestination] = useState('Arab Egypt');
   const [checkIn, setCheckIn] = useState([null, null]);
@@ -24,24 +20,7 @@ const Hero = () => {
   };
 
   // Kreiranje instanci TourPackage i UserProfile
-  const europeTour = new TourPackage(
-    1,
-    "European Adventure",
-    "Explore the best of Europe in 10 days.",
-    2500,
-    10,
-    ["Paris", "Rome", "Berlin"],
-    "https://example.com/europe-tour.jpg"
-  );
-
-  const user = new UserProfile(
-    1,
-    "John Doe",
-    "john.doe@example.com",
-    "123-456-7890"
-  );
-
-  user.addBooking(europeTour);
+  
 
   return (
     <>

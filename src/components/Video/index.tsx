@@ -18,7 +18,7 @@ const Video = () => {
     2500,
     10,
     ["Paris", "Rome", "Berlin"],
-    "https://th.bing.com/th/id/R.656ddb5a7e1c86e0211da3b3cfe1eb4e?rik=X%2bJ92cYlv%2f%2b6GA&riu=http%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f110000%2fvelka%2f3d-r-symbol.jpg&ehk=20cZCROIpdmQYgyqGs%2fXpbMFRlFGyJLfc6pFNGnEqr4%3d&risl=&pid=ImgRaw&r=0",
+    "images/blog/OIP.jfif",
     
   );
   const mediterraneanTour  = new TourPackage(
@@ -28,7 +28,17 @@ const Video = () => {
     1800,
     7,
     ["Barcelona", "Athens", "Venice"],
-    "https://th.bing.com/th/id/R.656ddb5a7e1c86e0211da3b3cfe1eb4e?rik=X%2bJ92cYlv%2f%2b6GA&riu=http%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f110000%2fvelka%2f3d-r-symbol.jpg&ehk=20cZCROIpdmQYgyqGs%2fXpbMFRlFGyJLfc6pFNGnEqr4%3d&risl=&pid=ImgRaw&r=0",
+    "images/blog/med.jpg",
+    
+  );
+  const alpineTour   = new TourPackage(
+    3,
+    "Alpine Adventure",
+    "Experience the Alps in Switzerland and Austria.",
+    3000,
+    14,
+    ["Zurich", "Innsbruck", "Geneva"],
+    "images/blog/alp.jfif",
     
   );
 
@@ -95,9 +105,8 @@ const Video = () => {
  
       <TourPackageCard tourPackage={europeTour} />
       <TourPackageCard tourPackage={mediterraneanTour} />
-      <TourPackageCard tourPackage={europeTour} />
-      <TourPackageCard tourPackage={europeTour} />
-      <TourPackageCard tourPackage={europeTour} />
+      <TourPackageCard tourPackage={alpineTour} />
+
    
     </div>
 
@@ -107,12 +116,10 @@ const Video = () => {
                   <p>{europeTour.getDetails()}</p>
                   <p>{mediterraneanTour.getSummary()}</p>
                   <p>{mediterraneanTour.getDetails()}</p>
+                  <p>{alpineTour.getSummary()}</p>
+                  <p>{alpineTour.getDetails()}</p>
                 </div>
-                <div className="user-profile-info">
-                  <h2>User Profile:</h2>
-                  <p>{user.getProfileSummary()}</p>
-                  <pre>{user.getBookingHistory()}</pre>
-                </div>
+                
       <div className="absolute bottom-0 left-0 right-0 z-[-1] h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat"></div>
     </section>
   );

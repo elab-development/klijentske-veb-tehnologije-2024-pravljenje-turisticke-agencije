@@ -1,10 +1,6 @@
 import SectionTitle from "../Common/SectionTitle";
 import SingleFeature from "./SingleFeature";
 import featuresData from "./featuresData";
-import TourPackage from "@/models/TourPackage";
-import UserProfile from "@/models/UserProfileCard";
-import TourPackageCard from "../TourPackageCard";
-import UserProfileCard from "../UserProfileCard";
 
 const Features = () => {
   return (
