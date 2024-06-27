@@ -7,6 +7,8 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
+import TourPackage from '@/models/TourPackage';
+import UserProfile from '@/models/UserProfileCard';
 
 const Hero = () => {
   const [destination, setDestination] = useState('Arab Egypt');
@@ -17,6 +19,26 @@ const Hero = () => {
     const [start, end] = dates;
     setCheckIn([start, end]);
   };
+
+  // Kreiranje instanci TourPackage i UserProfile
+  const europeTour = new TourPackage(
+    1,
+    "European Adventure",
+    "Explore the best of Europe in 10 days.",
+    2500,
+    10,
+    ["Paris", "Rome", "Berlin"],
+    "https://example.com/europe-tour.jpg"
+  );
+
+  const user = new UserProfile(
+    1,
+    "John Doe",
+    "john.doe@example.com",
+    "123-456-7890"
+  );
+
+  user.addBooking(europeTour);
 
   return (
     <>
@@ -72,6 +94,17 @@ const Hero = () => {
                     </div>
                   </form>
                 </Section>
+                {/* Prikaz TourPackage i UserProfile informacija */}
+                <div className="tour-package-info">
+                  <h2>Tour Package:</h2>
+                  <p>{europeTour.getSummary()}</p>
+                  <p>{europeTour.getDetails()}</p>
+                </div>
+                <div className="user-profile-info">
+                  <h2>User Profile:</h2>
+                  <p>{user.getProfileSummary()}</p>
+                  <pre>{user.getBookingHistory()}</pre>
+                </div>
               </div>
             </div>
           </div>
@@ -267,3 +300,4 @@ const Section = styled.section`
 `;
 
 export default Hero;
+
