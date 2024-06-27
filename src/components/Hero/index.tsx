@@ -1,3 +1,4 @@
+// src/components/Hero.tsx
 "use client";
 import React, { useState } from 'react';
 import Button from './button'; 
@@ -7,7 +8,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
-import TourPackage from '@/models/TourPackage';
+import TourPackage from 'src/models/TourPackage'; // Uvezi TourPackage klasu
 import UserProfile from '@/models/UserProfileCard';
 
 const Hero = () => {
@@ -300,4 +301,3 @@ const Section = styled.section`
 `;
 
 export default Hero;
-

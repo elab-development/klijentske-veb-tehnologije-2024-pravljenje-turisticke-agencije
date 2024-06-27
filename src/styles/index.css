@@ -31,3 +31,24 @@
     @apply opacity-100;
   }
 }
+.App {
+  text-align: center;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
