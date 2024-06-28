@@ -14,7 +14,7 @@ const Video = () => {
   const europeTour = new TourPackage(
     1,
     "European Adventure",
-    "Explore the best of Europe in 10 days.",
+     "Prelepa Evropa.",
     2500,
     10,
     ["Paris", "Rome", "Berlin"],
