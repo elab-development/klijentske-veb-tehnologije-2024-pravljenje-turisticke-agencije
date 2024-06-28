@@ -5,8 +5,12 @@ import TourPackage from 'src/models/TourPackage'; // Uvezi TourPackage klasu
 import UserProfile from '@/models/UserProfileCard';
 import TourPackageCard from "@/components/TourPackageCard";
 import UserProfileCard from "@/components/UserProfileCard";
+<<<<<<< HEAD
 import Reviews from "../Reviews";
 import React, { useState } from 'react';
+=======
+
+>>>>>>> d7750eddf78dbe95587338c41679a998cf492b56
 
 const user1 = new UserProfile(
   1,
@@ -116,11 +120,18 @@ const Testimonials = () => {
   <UserProfileCard user={user1} />
   <UserProfileCard user={user2} />
   <UserProfileCard user={user3} />
+<<<<<<< HEAD
 
 </div>
 
       </div>
   
+=======
+</div>
+
+      </div>
+      
+>>>>>>> d7750eddf78dbe95587338c41679a998cf492b56
       <div className="absolute right-0 top-5 z-[-1]">
         <svg
           width="238"

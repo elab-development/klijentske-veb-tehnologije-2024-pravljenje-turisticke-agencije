@@ -15,12 +15,16 @@ const AboutPage = () => {
     <>
     
       <Breadcrumb
-        pageName="About Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        pageName="O nama"
+        description="Ako zelite putovanje za pamcenje, na pravom ste mestu!"
       />
       <AboutSectionOne />
       <AboutSectionTwo />
+<<<<<<< HEAD
      
+=======
+      
+>>>>>>> d7750eddf78dbe95587338c41679a998cf492b56
     </>
   );
 };

@@ -10,7 +10,10 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import TravelBooking from '../TravelBooking';
 import 'src/styles/TravelBooking.css';
+<<<<<<< HEAD
 import Reviews from '../Reviews';
+=======
+>>>>>>> d7750eddf78dbe95587338c41679a998cf492b56
 const Hero = () => {
   const [destination, setDestination] = useState('Arab Egypt');
   const [checkIn, setCheckIn] = useState([null, null]);
@@ -42,8 +45,14 @@ const Hero = () => {
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
                   Istrazujte najlepsa mesta na svetu sa Roam Rise-om!
                 </p>
+<<<<<<< HEAD
               
        
+=======
+                <Section>
+                 
+                </Section>
+>>>>>>> d7750eddf78dbe95587338c41679a998cf492b56
                 {/* Prikaz TourPackage i UserProfile informacija */}
               
               </div>

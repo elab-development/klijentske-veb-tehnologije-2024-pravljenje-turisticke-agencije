@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 // src/components/Reviews.tsx
 import React, { useState } from 'react';
 import '../styles/Reviews.css';
+=======
+// Reviews.tsx
+import React, { useState } from 'react';
+>>>>>>> d7750eddf78dbe95587338c41679a998cf492b56
 
 interface Review {
   id: number;
@@ -24,6 +29,7 @@ const Reviews: React.FC = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div className="reviews">
       <h2>Reviews</h2>
       <div>
@@ -57,6 +63,39 @@ const Reviews: React.FC = () => {
         />
         <button onClick={handleAddReview}>Submit Review</button>
       </div>
+=======
+    <div>
+      <h2>Reviews</h2>
+      <div>
+        {reviews.map((review) => (
+          <div key={review.id}>
+            <h4>{review.user}</h4>
+            <p>{review.comment}</p>
+            <p>Rating: {review.rating}</p>
+          </div>
+        ))}
+      </div>
+      <h3>Add a review</h3>
+      <input
+        type="text"
+        placeholder="Your name"
+        value={user}
+        onChange={(e) => setUser(e.target.value)}
+      />
+      <textarea
+        placeholder="Your comment"
+        value={comment}
+        onChange={(e) => setComment(e.target.value)}
+      />
+      <input
+        type="number"
+        max={5}
+        min={0}
+        value={rating}
+        onChange={(e) => setRating(Number(e.target.value))}
+      />
+      <button onClick={handleAddReview}>Submit Review</button>
+>>>>>>> d7750eddf78dbe95587338c41679a998cf492b56
     </div>
   );
 };
