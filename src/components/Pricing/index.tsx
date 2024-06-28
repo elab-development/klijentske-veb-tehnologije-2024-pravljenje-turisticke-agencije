@@ -3,13 +3,14 @@ import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
-
+import Reviews from "../Reviews";
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
+      <Reviews />
         <SectionTitle
           title="Pogledajte ponudu"
           paragraph="Ima mnogo zanimljivih ponuda"
@@ -29,6 +30,7 @@ const Pricing = () => {
             >
               7 dana
             </span>
+            
             <div
               onClick={() => setIsMonthly(!isMonthly)}
               className="flex cursor-pointer items-center"
