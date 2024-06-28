@@ -14,8 +14,8 @@ const Blog = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Aranzmani"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        pageName="Istražite Svijet s Našim Posebnim Aranžmanima"
+        description="Dobrodošli u svijet avanture sa turističkom agencijom Roam Rise. Naša strast je da vam pružimo nezaboravna putovanja koja će ispuniti vaše snove. Sa širokim izborom destinacija širom svijeta i pažljivo kreiranim aranžmanima, nudimo vam jedinstveno iskustvo svake destinacije. Za ljubitelje egzotičnih plaža, nudimo tropske rajove i luksuzne odmore pod suncem. Avanturistima i istraživačima pružamo mogućnost da istraže skrivene kutke prirode i kulture širom planete. Za one koji traže kulturne destinacije i istorijske bisere, naši aranžmani otkrivaju najznačajnije spomenike i tradicije."
       />
 
       <section className="pb-[120px] pt-[120px]">
