@@ -61,6 +61,7 @@
 .add-review button:hover {
   background-color: #0056b3;
 }
+<<<<<<< HEAD
 /* src/styles/Offers.css */
 
 .notification {
@@ -72,3 +73,5 @@
   text-align: center;
   margin: 10px 0;
 }
+=======
+>>>>>>> d9a34be3c399990218a7d1d456704df98535c8c3

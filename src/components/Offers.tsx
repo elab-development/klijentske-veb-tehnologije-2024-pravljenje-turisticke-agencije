@@ -1,11 +1,17 @@
+<<<<<<< HEAD
 // src/components/Offers.tsx
 import React, { useState } from 'react';
 import '../styles/Offers.css';
+=======
+// Offers.tsx
+import React from 'react';
+>>>>>>> d9a34be3c399990218a7d1d456704df98535c8c3
 
 interface Offer {
   id: number;
   title: string;
   description: string;
+<<<<<<< HEAD
   price: string;
   imageUrl: string;
 }
@@ -49,6 +55,25 @@ const Offers: React.FC = () => {
             <p className="offer-price">{offer.price}</p>
             <button onClick={() => handleBookNow(offer.title)}>Book Now</button>
           </div>
+=======
+  discount: number;
+}
+
+const offers: Offer[] = [
+  { id: 1, title: 'Summer Sale', description: 'Up to 50% off on summer trips!', discount: 50 },
+  { id: 2, title: 'Early Bird', description: 'Book early and save 20%', discount: 20 }
+];
+
+const Offers: React.FC = () => {
+  return (
+    <div>
+      <h2>Special Offers</h2>
+      {offers.map((offer) => (
+        <div key={offer.id}>
+          <h3>{offer.title}</h3>
+          <p>{offer.description}</p>
+          <p>Discount: {offer.discount}%</p>
+>>>>>>> d9a34be3c399990218a7d1d456704df98535c8c3
         </div>
       ))}
     </div>
