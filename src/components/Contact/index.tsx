@@ -1,5 +1,5 @@
 import NewsLatterBox from "./NewsLatterBox";
-
+import UserProfile from "../UserProfile";
 const Contact = () => {
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
@@ -11,6 +11,7 @@ const Contact = () => {
               data-wow-delay=".15s
               "
             >
+           
               <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
                 Need Help? Open a Ticket
               </h2>
@@ -49,6 +50,7 @@ const Contact = () => {
                       />
                     </div>
                   </div>
+                  
                   <div className="w-full px-4">
                     <div className="mb-8">
                       <label
@@ -74,6 +76,7 @@ const Contact = () => {
               </form>
             </div>
           </div>
+     
           <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
             <NewsLatterBox />
           </div>
