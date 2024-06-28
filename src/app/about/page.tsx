@@ -20,6 +20,7 @@ const AboutPage = () => {
       />
       <AboutSectionOne />
       <AboutSectionTwo />
+      
     </>
   );
 };
