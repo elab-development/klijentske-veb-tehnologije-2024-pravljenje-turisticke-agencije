@@ -1,7 +1,5 @@
-import { Testimonial } from "@/types/testimonial";
-import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
-import TourPackage from 'src/models/TourPackage'; // Uvezi TourPackage klasu
+import TourPackage from 'src/models/TourPackage'; // Import TourPackage class
 import UserProfile from '@/models/UserProfileCard';
 import TourPackageCard from "@/components/TourPackageCard";
 import UserProfileCard from "@/components/UserProfileCard";
@@ -34,28 +32,25 @@ const europeTour = new TourPackage(
   2500,
   10,
   ["Paris", "Rome", "Berlin"],
-  "images/blog/OIP.jfif",
-  
+  "images/blog/OIP.jfif"
 );
-const mediterraneanTour  = new TourPackage(
+const mediterraneanTour = new TourPackage(
   2,
   "Mediterranean Magic",
   "Discover the beauty of the Mediterranean in 7 days.",
   1800,
   7,
   ["Barcelona", "Athens", "Venice"],
-  "images/blog/med.jpg",
-  
+  "images/blog/med.jpg"
 );
-const alpineTour   = new TourPackage(
+const alpineTour = new TourPackage(
   3,
   "Alpine Adventure",
   "Experience the Alps in Switzerland and Austria.",
   3000,
   14,
   ["Zurich", "Innsbruck", "Geneva"],
-  "images/blog/alp.jfif",
-  
+  "images/blog/alp.jfif"
 );
 user1.addBooking(europeTour);
 user2.addBooking(mediterraneanTour);
@@ -96,9 +91,9 @@ const user = new UserProfile(
   "john.doe@example.com",
   "123-456-7890"
 );
+
 const Testimonials = () => {
   return (
-    
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
@@ -113,14 +108,12 @@ const Testimonials = () => {
           ))}
         </div>
         <div className="App" style={{ display: 'flex', gap: '120px' }}>
-  <UserProfileCard user={user1} />
-  <UserProfileCard user={user2} />
-  <UserProfileCard user={user3} />
-
-</div>
-
+          <UserProfileCard user={user1} />
+          <UserProfileCard user={user2} />
+          <UserProfileCard user={user3} />
+        </div>
       </div>
-  
+
       <div className="absolute right-0 top-5 z-[-1]">
         <svg
           width="238"
@@ -169,7 +162,6 @@ const Testimonials = () => {
               y2="675.565"
               gradientUnits="userSpaceOnUse"
             >
-              
               <stop stopColor="#4A6CF7" />
               <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
             </linearGradient>
