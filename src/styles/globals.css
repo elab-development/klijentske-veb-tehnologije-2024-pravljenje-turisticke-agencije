@@ -18,3 +18,58 @@
   border-bottom: 1px solid #ddd;
   margin-bottom: 15px;
 }
+/* src/styles/globals.css */
+
+/* Stilizacija za ArrangementList komponentu sa različitim bojama */
+
+.ArrangementList {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7; /* Svetlo siva pozadina */
+  border: 1px solid #ddd; /* Svetlo sivi okvir */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Senka */
+}
+
+.ArrangementList input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ArrangementList ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ArrangementList li {
+  background-color: black; /* Bela pozadina */
+  margin-bottom: 12px;
+  padding: 16px;
+  border: 1px solid black; /* Svetlo sivi okvir */
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Prijelaz boje */
+}
+
+.ArrangementList li:hover {
+  background-color: blue; /* Svetlo siva pozadina prilikom hovera */
+}
+
+.ArrangementList li div {
+  margin-bottom: 8px;
+}
+
+.ArrangementList li div:last-child {
+  margin-bottom: 0;
+}
+
+.ArrangementList h2 {
+  font-size: 28px;
+  color: #333333; /* Tamno siva boja teksta */
+  text-align: center;
+  margin-bottom: 24px;
+}
