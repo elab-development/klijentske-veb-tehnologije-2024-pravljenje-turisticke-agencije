@@ -1,6 +1,65 @@
 import { Testimonial } from "@/types/testimonial";
 import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
+import TourPackage from 'src/models/TourPackage'; // Uvezi TourPackage klasu
+import UserProfile from '@/models/UserProfileCard';
+import TourPackageCard from "@/components/TourPackageCard";
+import UserProfileCard from "@/components/UserProfileCard";
+import Reviews from "../Reviews";
+import React, { useState } from 'react';
+
+const user1 = new UserProfile(
+  1,
+  "Petar Mitrovic",
+  "petar.mitrovic@gmail.com",
+  "123-456-7890"
+);
+const user2 = new UserProfile(
+  1,
+  "David Simovic",
+  "david.simovic@gmail.com",
+  "123-444-7890"
+);
+const user3 = new UserProfile(
+  1,
+  "Zoran Jovanovic",
+  "zoran.jovanovic@gmail.com",
+  "123-456-7000"
+);
+
+const europeTour = new TourPackage(
+  1,
+  "Prelepa Evropa",
+  "Explore the best of Europe in 10 days.",
+  2500,
+  10,
+  ["Paris", "Rome", "Berlin"],
+  "images/blog/OIP.jfif",
+  
+);
+const mediterraneanTour  = new TourPackage(
+  2,
+  "Mediterranean Magic",
+  "Discover the beauty of the Mediterranean in 7 days.",
+  1800,
+  7,
+  ["Barcelona", "Athens", "Venice"],
+  "images/blog/med.jpg",
+  
+);
+const alpineTour   = new TourPackage(
+  3,
+  "Alpine Adventure",
+  "Experience the Alps in Switzerland and Austria.",
+  3000,
+  14,
+  ["Zurich", "Innsbruck", "Geneva"],
+  "images/blog/alp.jfif",
+  
+);
+user1.addBooking(europeTour);
+user2.addBooking(mediterraneanTour);
+user3.addBooking(alpineTour);
 
 const testimonialData: Testimonial[] = [
   {
@@ -31,9 +90,15 @@ const testimonialData: Testimonial[] = [
     star: 4,
   },
 ];
-
+const user = new UserProfile(
+  1,
+  "John Doe",
+  "john.doe@example.com",
+  "123-456-7890"
+);
 const Testimonials = () => {
   return (
+    
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
@@ -47,7 +112,15 @@ const Testimonials = () => {
             <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
           ))}
         </div>
+        <div className="App" style={{ display: 'flex', gap: '120px' }}>
+  <UserProfileCard user={user1} />
+  <UserProfileCard user={user2} />
+  <UserProfileCard user={user3} />
+
+</div>
+
       </div>
+  
       <div className="absolute right-0 top-5 z-[-1]">
         <svg
           width="238"
@@ -96,12 +169,14 @@ const Testimonials = () => {
               y2="675.565"
               gradientUnits="userSpaceOnUse"
             >
+              
               <stop stopColor="#4A6CF7" />
               <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>
       </div>
+
       <div className="absolute bottom-5 left-0 z-[-1]">
         <svg
           width="279"

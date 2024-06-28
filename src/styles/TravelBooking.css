@@ -1,0 +1,35 @@
+/* src/styles/TravelBooking.css */
+
+.travel-booking {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.travel-booking h2 {
+  color: #333;
+}
+
+.travel-booking input,
+.travel-booking button {
+  width: calc(100% - 20px);
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.travel-booking button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.travel-booking button:hover {
+  background-color: #0056b3;
+}

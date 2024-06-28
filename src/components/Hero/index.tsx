@@ -8,7 +8,11 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
-
+import TravelBooking from '../TravelBooking';
+import 'src/styles/TravelBooking.css';
+import Reviews from '../Reviews';
+import UserProfile from '../UserProfile';
+import Offers from '../Offers';
 const Hero = () => {
   const [destination, setDestination] = useState('Arab Egypt');
   const [checkIn, setCheckIn] = useState([null, null]);
@@ -30,6 +34,7 @@ const Hero = () => {
         className="relative z-10 overflow-hidden bg-cover bg-center pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
         style={{ backgroundImage: "url(/images/video/turska.jpeg)" }}
       >
+      
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
@@ -40,50 +45,16 @@ const Hero = () => {
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
                   Istrazujte najlepsa mesta na svetu sa Roam Rise-om!
                 </p>
-                <Section>
-                  <form>
-                    <div className="row">
-                      <label>Destinations</label>
-                      <select value={destination} onChange={(e) => setDestination(e.target.value)}>
-                        <option>Halkidiki Greece</option>
-                        <option>Tasos Greece</option>
-                      </select>
-                    </div>
-                    <div className="row">
-                      <label>Check In</label>
-                      <DatePicker 
-                        selected={checkIn[0]} 
-                        onChange={handleDateChange} 
-                        startDate={checkIn[0]}
-                        endDate={checkIn[1]}
-                        selectsRange
-                        dateFormat="dd/MM/yyyy"
-                      />
-                    </div>
-                    <div className="row">
-                      <label>Price Range</label>
-                      <input
-                        type="text"
-                        value={priceRange}
-                        onChange={(e) => setPriceRange(e.target.value)}
-                      />
-                    </div>
-                    <div className="row">
-                      <Link href={'/blog'}>
-                      <Button>
-                        <FontAwesomeIcon icon={faSearch} />
-                      </Button>
-                      </Link>
-                    </div>
-                  </form>
-                </Section>
+           
+       
                 {/* Prikaz TourPackage i UserProfile informacija */}
               
               </div>
             </div>
           </div>
+      
         </div>
-        
+        <TravelBooking destination="Rome" />
         <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="450"
