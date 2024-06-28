@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-
+import UserProfile from "../UserProfile";
 const NewsLatterBox = () => {
   const { theme } = useTheme();
 
@@ -10,6 +10,7 @@ const NewsLatterBox = () => {
       <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
         Subscribe to receive future updates
       </h3>
+ 
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
         Lorem ipsum dolor sited Sed ullam corper consectur adipiscing Mae ornare
         massa quis lectus.
@@ -36,7 +37,7 @@ const NewsLatterBox = () => {
           No spam guaranteed, So please don’t send any spam mail.
         </p>
       </div>
-
+      <UserProfile />
       <div>
         <span className="absolute left-2 top-7">
           <svg
