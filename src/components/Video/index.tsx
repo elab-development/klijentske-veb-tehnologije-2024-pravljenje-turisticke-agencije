@@ -10,7 +10,10 @@ import UserProfile from '@/models/UserProfileCard';
 import TourPackageCard from "@/components/TourPackageCard";
 import UserProfileCard from "@/components/UserProfileCard";
 import Offers from "../Offers";
+<<<<<<< HEAD
 import ArrangementList from "../ArrangementList";
+=======
+>>>>>>> edee06dc20963d74d3f6f008353dbd84c0a56036
 const Video = () => {
   const [isOpen, setOpen] = useState(false);
   const europeTour = new TourPackage(

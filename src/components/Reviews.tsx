@@ -1,6 +1,29 @@
+<<<<<<< HEAD
 // src/components/Reviews.tsx
 import React, { useState } from 'react';
 import '../styles/Reviews.css';
+=======
+<<<<<<< HEAD
+// src/components/Reviews.tsx
+import React, { useState } from 'react';
+import '../styles/Reviews.css';
+=======
+<<<<<<< HEAD
+// src/components/Reviews.tsx
+import React, { useState } from 'react';
+import '../styles/Reviews.css';
+=======
+<<<<<<< HEAD
+// src/components/Reviews.tsx
+import React, { useState } from 'react';
+import '../styles/Reviews.css';
+=======
+// Reviews.tsx
+import React, { useState } from 'react';
+>>>>>>> d7750eddf78dbe95587338c41679a998cf492b56
+>>>>>>> 09043f9cc0d4f3a7795131c63c3d68b0f816952e
+>>>>>>> d9a34be3c399990218a7d1d456704df98535c8c3
+>>>>>>> edee06dc20963d74d3f6f008353dbd84c0a56036
 
 interface Review {
   id: number;
@@ -24,6 +47,16 @@ const Reviews: React.FC = () => {
   };
 
   return (
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 09043f9cc0d4f3a7795131c63c3d68b0f816952e
+>>>>>>> d9a34be3c399990218a7d1d456704df98535c8c3
+>>>>>>> edee06dc20963d74d3f6f008353dbd84c0a56036
     <div className="reviews">
       <h2>Reviews</h2>
       <div>
@@ -57,6 +90,48 @@ const Reviews: React.FC = () => {
         />
         <button onClick={handleAddReview}>Submit Review</button>
       </div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    <div>
+      <h2>Reviews</h2>
+      <div>
+        {reviews.map((review) => (
+          <div key={review.id}>
+            <h4>{review.user}</h4>
+            <p>{review.comment}</p>
+            <p>Rating: {review.rating}</p>
+          </div>
+        ))}
+      </div>
+      <h3>Add a review</h3>
+      <input
+        type="text"
+        placeholder="Your name"
+        value={user}
+        onChange={(e) => setUser(e.target.value)}
+      />
+      <textarea
+        placeholder="Your comment"
+        value={comment}
+        onChange={(e) => setComment(e.target.value)}
+      />
+      <input
+        type="number"
+        max={5}
+        min={0}
+        value={rating}
+        onChange={(e) => setRating(Number(e.target.value))}
+      />
+      <button onClick={handleAddReview}>Submit Review</button>
+>>>>>>> d7750eddf78dbe95587338c41679a998cf492b56
+>>>>>>> 09043f9cc0d4f3a7795131c63c3d68b0f816952e
+>>>>>>> d9a34be3c399990218a7d1d456704df98535c8c3
+>>>>>>> edee06dc20963d74d3f6f008353dbd84c0a56036
     </div>
   );
 };

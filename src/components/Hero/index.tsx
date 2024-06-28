@@ -10,9 +10,27 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import TravelBooking from '../TravelBooking';
 import 'src/styles/TravelBooking.css';
+<<<<<<< HEAD
 import Reviews from '../Reviews';
 import UserProfile from '../UserProfile';
 import Offers from '../Offers';
+=======
+<<<<<<< HEAD
+import Reviews from '../Reviews';
+import UserProfile from '../UserProfile';
+import Offers from '../Offers';
+=======
+<<<<<<< HEAD
+import Reviews from '../Reviews';
+import UserProfile from '../UserProfile';
+=======
+<<<<<<< HEAD
+import Reviews from '../Reviews';
+=======
+>>>>>>> d7750eddf78dbe95587338c41679a998cf492b56
+>>>>>>> 09043f9cc0d4f3a7795131c63c3d68b0f816952e
+>>>>>>> d9a34be3c399990218a7d1d456704df98535c8c3
+>>>>>>> edee06dc20963d74d3f6f008353dbd84c0a56036
 const Hero = () => {
   const [destination, setDestination] = useState('Arab Egypt');
   const [checkIn, setCheckIn] = useState([null, null]);
@@ -45,14 +63,47 @@ const Hero = () => {
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
                   Istrazujte najlepsa mesta na svetu sa Roam Rise-om!
                 </p>
+<<<<<<< HEAD
            
        
+=======
+<<<<<<< HEAD
+           
+       
+=======
+<<<<<<< HEAD
+              
+       
+=======
+<<<<<<< HEAD
+              
+       
+=======
+                <Section>
+                 
+                </Section>
+>>>>>>> d7750eddf78dbe95587338c41679a998cf492b56
+>>>>>>> 09043f9cc0d4f3a7795131c63c3d68b0f816952e
+>>>>>>> d9a34be3c399990218a7d1d456704df98535c8c3
+>>>>>>> edee06dc20963d74d3f6f008353dbd84c0a56036
                 {/* Prikaz TourPackage i UserProfile informacija */}
               
               </div>
             </div>
           </div>
+<<<<<<< HEAD
       
+=======
+<<<<<<< HEAD
+      
+=======
+<<<<<<< HEAD
+      
+=======
+          
+>>>>>>> 09043f9cc0d4f3a7795131c63c3d68b0f816952e
+>>>>>>> d9a34be3c399990218a7d1d456704df98535c8c3
+>>>>>>> edee06dc20963d74d3f6f008353dbd84c0a56036
         </div>
         <TravelBooking destination="Rome" />
         <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
