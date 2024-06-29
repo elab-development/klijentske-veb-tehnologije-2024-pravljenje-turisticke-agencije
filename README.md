@@ -30,22 +30,7 @@ Uverite se da imate instaliran sledeći softver na vašoj mašini:
     npm install
     
 
-3. *Podešavanje okruženja:*
-
-    Kopirajte primer fajla sa promenljivama okruženja i podesite ga:
-    sh
-    cp .env.example .env
-    
-    Izmenite .env fajl da odgovara vašem lokalnom okruženju.
-
-4. *Podešavanje baze podataka:*
-
-    Ako vaš projekat koristi bazu podataka, postavite je pokretanjem migracija (prilagodite ovaj korak prema zahtevima vašeg projekta):
-    sh
-    npm run migrate
-    
-
-5. *Pokretanje aplikacije:*
+3. *Pokretanje aplikacije:*
 
     Pokrenite razvojni server:
     sh
