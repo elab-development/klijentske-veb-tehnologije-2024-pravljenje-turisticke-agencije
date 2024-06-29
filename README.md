@@ -1,3 +1,68 @@
+## Kako početi
+
+Ova uputstva će vam omogućiti da preuzmete kopiju projekta i pokrenete je na vašoj lokalnoj mašini za razvoj i testiranje.
+
+### Prethodni zahtevi
+
+Uverite se da imate instaliran sledeći softver na vašoj mašini:
+
+- [Git](https://git-scm.com/downloads)
+- [Node.js](https://nodejs.org/) (sa npm)
+- [Docker](https://www.docker.com/get-started) (ako koristite Docker)
+
+### Instalacija
+
+1. *Klonirajte repozitorijum:*
+
+    Otvorite vaš terminal i pokrenite:
+    sh
+    git clone https://github.com/vas-korisnicko-ime/vas-repozitorijum.git
+    
+    Uđite u direktorijum projekta:
+    sh
+    cd vas-repozitorijum
+    
+
+2. *Instalirajte zavisnosti:*
+
+    Ako projekat koristi Node.js, pokrenite:
+    sh
+    npm install
+    
+
+3. *Podešavanje okruženja:*
+
+    Kopirajte primer fajla sa promenljivama okruženja i podesite ga:
+    sh
+    cp .env.example .env
+    
+    Izmenite .env fajl da odgovara vašem lokalnom okruženju.
+
+4. *Podešavanje baze podataka:*
+
+    Ako vaš projekat koristi bazu podataka, postavite je pokretanjem migracija (prilagodite ovaj korak prema zahtevima vašeg projekta):
+    sh
+    npm run migrate
+    
+
+5. *Pokretanje aplikacije:*
+
+    Pokrenite razvojni server:
+    sh
+    npm start
+    
+    ili, ako koristite Docker:
+    sh
+    docker-compose up
+    
+
+Vaša aplikacija bi sada trebalo da radi na http://localhost:3000 (ili na nekom drugom portu ako je drugačije podešeno).
+
+### Pokretanje testova
+
+Da biste pokrenuli testove, koristite:
+```sh
+npm test
 Univerzitet u Beogradu
 Fakultet organizacionih nauka
 Katedra za elektronsko poslovanje
