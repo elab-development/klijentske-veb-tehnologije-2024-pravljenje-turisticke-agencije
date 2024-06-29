@@ -48,6 +48,54 @@ Vaša aplikacija bi sada trebalo da radi na http://localhost:3000 (ili na nekom 
 Da biste pokrenuli testove, koristite:
 ```sh
 npm test
+
+Ovaj projekat je razvijen koristeći moderni JavaScript framework i biblioteku za izgradnju korisničkih interfejsa. U nastavku je objašnjenje tehnologija, biblioteka i dodatnih paketa korišćenih u realizaciji aplikacije.
+
+## Tehnologije
+
+- *TypeScript:* Projekat je napisan u TypeScript-u, koji pruža statičku tipizaciju za JavaScript, što pomaže u sprečavanju grešaka tokom razvoja.
+- *React:* Biblioteka za izgradnju korisničkih interfejsa zasnovana na komponentama.
+- *Vite:* Alat za izgradnju i razvoj modernih frontend aplikacija koji nudi brzinu i efikasnost u odnosu na tradicionalne alate poput Webpack-a.
+
+## Struktura Projekta
+
+- *src/components:* Sadrži React komponente.
+  - MyComponent.tsx: Primer komponente.
+  - ComponentWithButton.tsx: Komponenta koja sadrži dugme.
+  
+- *src/utils:* Pomoćne funkcije i logika.
+  - calculate.ts: Primer pomoćne funkcije.
+
+- *src/pages:* Stranice aplikacije.
+  - index.tsx: Glavna stranica aplikacije.
+
+- *src/styles:* Stilovi za aplikaciju.
+  - globals.css: Globalni CSS stilovi.
+
+- *tests:* Testovi aplikacije.
+  - functionality.test.ts: Test funkcionalnosti.
+  - Component.test.tsx: Test komponente.
+  - ComponentWithMock.test.tsx: Test komponente sa mock-ovima.
+
+- *public:* Javna statička sredstva.
+
+- *node_modules:* Zavisnosti projekta.
+
+- *.gitignore:* Fajl koji specificira koje fajlove Git treba da ignoriše.
+
+- *package.json:* Zavisnosti projekta i skripte za pokretanje.
+- *tsconfig.json:* Konfiguracija TypeScript-a.
+- *vite.config.ts:* Konfiguracija za Vite.
+- *vitest.setup.ts:* Postavke za Vitest.
+
+## Biblioteke i Paketi
+
+- *React:* Glavna biblioteka za izgradnju korisničkih interfejsa.
+- *TypeScript:* Staticka tipizacija za JavaScript.
+- *Vite:* Alat za razvoj i izgradnju aplikacija.
+- *Vitest:* Alat za testiranje sličan Jest-u, ali optimizovan za Vite projekte.
+- *React Testing Library:* Biblioteka za testiranje React komponenti koja promoviše najbolje prakse pristupa korisničkom interfejsu.
+
 Univerzitet u Beogradu
 Fakultet organizacionih nauka
 Katedra za elektronsko poslovanje
